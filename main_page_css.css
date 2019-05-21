@@ -20,3 +20,8 @@ li {
     display: inline;
     padding: 10px
 }
+
+.courses {
+    color: red;
+    font-size: 140%;
+}
