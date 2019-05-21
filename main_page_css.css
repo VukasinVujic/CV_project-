@@ -1,0 +1,22 @@
+.main {
+    color:red;
+    text-align: center;
+
+}
+
+body {
+    background-color: lightblue
+}
+
+.main_position {
+    padding: 200px 0;
+}
+
+.under_main {
+    list-style-type:none;
+    text-align: center;
+}
+li {
+    display: inline;
+    padding: 10px
+}
