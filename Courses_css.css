@@ -1,0 +1,24 @@
+
+   /* .border {
+    border-style: dashed;
+    width: 50%;
+    padding: 2%;
+    
+   } */
+
+   .circle {
+    width: 440px;
+    height: 200px;
+    border-radius: 50%;
+    color: #fff;
+    padding-top:100px;
+    text-align: center;
+    background: lightblue;
+    color:purple;
+    display: inline-block;
+    font-size: 125%;
+  }
+
+  body {
+      background-color: lightsalmon 
+  }

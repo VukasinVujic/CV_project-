@@ -5,20 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Programing courses</title>
+    <link rel="stylesheet" href="Courses_css.css" type="text/css">
 </head>
 <body>
-
+    <a href="main_page.html">Home</a>
     <h3>Programing courses</h3>
     <p><b>push one button for additional information</b></p>
+    <div class="circle">
+        <h4>Java basic course FTN</h4>
+        <button onclick="show('7')">Java</button>
+    </div>
+    <div class="circle">
+            <h4>Basic course VIVIFY</h4>
+            <button onclick="show('1')">HTML/CSS</button>
+            <button onclick="show('2')">PHP</button>
+            <button onclick="show('3')">SQL</button>
+            <button onclick="show('4')">OOP</button>
+            <button onclick="show('5')">JavaScript</button>
+            <button onclick="show('6')">GIT</button>
+    </div>
+    <div class="circle">
+            <h4>Advance course VIVIFY</h4>
+            <button onclick="show('8')">Laravel</button>
+            <button onclick="show('9')">Vue.js</button>
+            <button onclick="show('10')">API,REST</button>
+            <button onclick="show('11')">Advanced OOP</button>
+            <button onclick="show('12')">Advanced JS</button>
 
-    <button onclick="basicCourse">PHP</button>
-    <button onclick="basicCourse">HTML/CSS</button>
-    <button onclick="basicCourse">JavaScript</button>
-    <button onclick="basicCourse">OOP</button>
-    <button onclick="basicCourse">SQL</button>
+    </div>
+
+
+    
+    
+
+    <br><br>
+
+
     <!-- moveTo() -->
 
+    <script>
+    var course; 
+    // var php = "Learning basic concepts in PHP such as functions,variables, loops, switch-case etc. PHP in use through web development.HTTP requests and responses."   
 
+    var technologies = [];
+    technologies[1] = "HTML/CSS <br> Working with content and format of web sites using HTML & CSS. '\n' " + 
+    "Learning about tag,attributes and where and when to use them <br> <br>";
+    technologies[2] = "PHP  <br> Learning basic concepts in PHP such as functions,variables, loops, '\n' " +
+    "switch-case etc. PHP in use through web development.HTTP requests and responses. <br> <br>";
+    technologies[3] = "SQL  <br>  working in MySQL using SQL commands. Creating new data bases,'\n' " + 
+    " modeling and entering information in it. <br> <br>";
+    technologies[4] = "OOP  <br> getting familiar with concepts in OOP such as inheritance, class,'\n' " +
+    "objects,attributes , methods, abstract class, interface,static attributes and methods of classes <br> <br> ";
+    technologies[5] = "JavaScript  <br> Learning basics in JS on the same principle as for PHP.'\n' " +  
+    "Applying OOP in JS. Working with callback, anonymous and self functions. working with DOM and with events.<br> <br>";
+    technologies[6] = "GIT  <br> Learning about GIT using Github, creating new repositories, commiting, '\n' " + 
+    "pushing etc <br> <br> " ;
+    technologies[7] = "Java  <br> Working with variables and values, program flow control, working '\n' " +
+     "with arrays and collections, basic search and sorting algorithms, work with functions, utilizing '\n' " +  
+     "an I / O subsystem from a Java program, basic concepts of objective programming <br> <br> " ;
+    technologies[8] = "Laravel Learning about MVC pattern. Working with routs and controllers. Working with data '\n' " + 
+    " basses through Eloquent and using DB migrations. Using blades as part views, without using front-end '\n' " +
+    "frameworks, using Bootstrap within Laravel Projects. Authentication of user, learning about Middleware and '\n' " + 
+    "how to use them and about redirection. Validation of data through Laravel. Dependency injection, collections, '\n' " +
+    " Form Requests. Using artisan commands and learning basics about Service Providers. ";
+    technologies[9] = "Vue.js  <br> Learning about data binding and template syntax. Components, event handling. '\n' " +  
+    "Components, Event Handling, custom directives, filters, Mixins. Computed properties and watchers. Using '\n' " + 
+    "Bootstrap within Vue.js Projects. Form input Bindings, validation and Axios. Routing and navigation in SPA. '\n' " +
+    "Communication between components, parent-child and siblings.";
+    technologies[10] = "API,REST  <br> API authentication, different types and their usage. Connecting server '\n' " +
+    "side(API) and clients application.";
+
+     function show(number)  {
+            for(var i = 1 ; i<=technologies.length ; i++){
+                if(number == i){
+                    course =window.open("", "course", "width=500, height=100");            
+                    course.document.write(technologies[i] )
+                    }
+                }    
+            }  
+        
+
+
+
+    </script>
 
     
 </body>
