@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Programing courses</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="Courses_css.css" type="text/css">
 </head>
 <body>
-    <a href="index.html">Home</a>
+    <a href="index.html"><i class="glyphicon glyphicon-home"> Home </i> </a>
     <h3>Programing courses</h3>
     <p><b>push one button for additional information</b></p>
     <div class="circle">
         <h4>Java basic course FTN</h4>
         <button onclick="show('7')">Java</button>
     </div>
+    
     <div class="circle">
             <h4>Basic course VIVIFY</h4>
             <button onclick="show('1')">HTML/CSS</button>
@@ -34,19 +36,10 @@
 
     </div>
 
-
-    
-    
-
-    <br><br>
-
-
     <!-- moveTo() -->
 
     <script>
     var course; 
-    // var php = "Learning basic concepts in PHP such as functions,variables, loops, switch-case etc. PHP in use through web development.HTTP requests and responses."   
-
     var technologies = [];
     technologies[1] = "HTML/CSS <br> Working with content and format of web sites using HTML & CSS. '\n' " + 
     "Learning about tag,attributes and where and when to use them <br> <br>";
@@ -78,10 +71,13 @@
      function show(number)  {
             for(var i = 1 ; i<=technologies.length ; i++){
                 if(number == i){
-                    course =window.open("", "course", "width=500, height=100");            
-                    course.document.write(technologies[i] )
-                    }
-                }    
+                    course =window.open("", "course", "width=500, height=100 , background-color=red");  // using this method to make a window           
+                    course.document.write(technologies[i] ) // pop up with the information for specific course 
+                                // link for addition information https://www.w3schools.com/jsref/met_win_moveto.asp
+                                
+                                // document.body.style.backgroundColor = "red";    
+                }          
+                }
             }  
         
 

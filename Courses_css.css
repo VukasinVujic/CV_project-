@@ -7,11 +7,11 @@
    } */
 
    .circle {
-    width: 440px;
-    height: 200px;
+    /* width: 80 10px; */
+    height: 210px;
     border-radius: 50%;
     color: #fff;
-    padding-top:100px;
+    padding-top:60px;
     text-align: center;
     background: lightblue;
     color:purple;
@@ -20,5 +20,8 @@
   }
 
   body {
-      background-color: lightsalmon 
+      background-color: lightsalmon ;
+      margin: 10px;
   }
+
+  

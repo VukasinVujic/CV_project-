@@ -16,5 +16,6 @@ td {
 }
 
 body {
-    background-color: beige
+    background-color: beige;
+    margin: 10px;
 }

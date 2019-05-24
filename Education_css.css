@@ -3,7 +3,8 @@ li {
 }
 
 body {
-    background-color: lightgoldenrodyellow
+    background-color: lightgoldenrodyellow;
+    margin:10px;
 }
 
 table, th , td {
